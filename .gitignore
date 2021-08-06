@@ -1,0 +1,7 @@
+node_modules
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
+!.env
