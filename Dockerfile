@@ -8,4 +8,4 @@ RUN npm run build
 
 FROM nginx:1.19
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY ./app/dist /usr/share/nginx/html
