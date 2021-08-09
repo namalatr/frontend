@@ -25,7 +25,7 @@ RUN apt-get update \
   && apt-get clean
 
 # copy nginx and ssl config
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
 # get frontend to be built in this container
 COPY ./ ./frontend-ce
