@@ -31,9 +31,8 @@ COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./ ./frontend-ce
 
 # install projects dependencies
-RUN cd frontend-ce \
-    && npm ci \
-    && npm run build \
-    && cd ..
-
+    RUN cd fronend-ce
+    RUN  npm run build 
+    RUN cd ..
+    
 CMD ["nginx", "-g", "daemon off;"] 
