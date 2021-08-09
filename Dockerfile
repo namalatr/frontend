@@ -1,4 +1,4 @@
-FROM node:lts-buster-slim as build
+FROM node as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install 
